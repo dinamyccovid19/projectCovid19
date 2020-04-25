@@ -6,10 +6,6 @@
   </ion-toolbar>
 </ion-header>
 
-
-
-
-
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
@@ -17,5 +13,45 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <div class="form">
+  <form action="/createroom" method="post">
+    <div>
+        <label for="roomname">Room Name:</label>
+        <input type="text" id="roomname" />
+    </div>
+    <div>
+        <label for="roomaddress">Room Address:</label>
+        <input type="text" id="roomaddress" />
+    </div>
+    <div>
+      <label for="roomfloor">Room Floor:</label>
+      <input type="text" id="roomfloor" />
+    </div>
+    <div>
+      <label for="roomnumber">Room Number:</label>
+      <input type="text" id="roomnumber" />
+    </div>
+    <div>
+      <label for="roomsupervisor">Room Superviser:</label>
+      <input type="text" id="roomsuperviser" />
+    </div>
+    <div>
+      <label for="maximopeople">Maximum Capacity people:</label>
+      <input type="text" id="maximopeople" />
+    </div>
+    <div>
+      <label for="roomtipology">Room Tipology: </label>
+      <select>
+        <option>Laboratorio</option>
+        <option>Aula</option>
+        <option>Biblioteca</option>
+        <option>Museo</option>
+       </select>
+    </div>
+   
+    <div class="button">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+</div>
 </ion-content>
