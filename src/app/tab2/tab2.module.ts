@@ -7,6 +7,7 @@ import { Tab2Page } from './tab2.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
+import { QRScanner } from '@ionic-native/qr-scanner/ngx';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { Tab2PageRoutingModule } from './tab2-routing.module';
     ExploreContainerComponentModule,
     Tab2PageRoutingModule
   ],
+  providers: [QRScanner],
   declarations: [Tab2Page]
 })
 export class Tab2PageModule {}
