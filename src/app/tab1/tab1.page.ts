@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner/ngx';
+import { DinamycServiceService } from '../dinamyc-service.service';
 
 @Component({
   selector: 'app-tab1',
@@ -8,13 +9,14 @@ import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner/ngx';
 })
 export class Tab1Page {
 
-  constructor(private qrScanner: QRScanner) {
+  constructor(private qrScanner: QRScanner, private service:DinamycServiceService) {
     // Optionally request the permission early
 
 
   }
 
   ionViewDidEnter(){
+    this.service.presentLoading();
     this.qrScanner.prepare()
     .then((status: QRScannerStatus) => {
       if (status.authorized) {
@@ -40,6 +42,8 @@ export class Tab1Page {
     .catch((e: any) => console.log('Error is', e));
    
   }
+
+
 
 
 

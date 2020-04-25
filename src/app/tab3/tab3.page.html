@@ -7,51 +7,91 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-content>
+      <div class="id-room"><span>Room ID : 0001 </span> </div>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-item > 
+              <ion-label>Active Reservation</ion-label>
+              <ion-toggle color="success"></ion-toggle>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 
-  <div class="form">
-  <form action="/createroom" method="post">
-    <div>
-        <label for="roomname">Room Name:</label>
-        <input type="text" id="roomname" />
+    <!--  -->
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-item > 
+              <ion-label position="floating">Room Name:</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">Room Address:</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    <!--  -->
+    <!--  -->
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">Room Floor:</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">Capacity people:</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    <!--  -->
+
+    <!--  -->
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label>Room Tipology:</ion-label>
+            <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+              <ion-select-option value="full professor">full professor</ion-select-option>
+              <ion-select-option value="assistant professor">assistant professor</ion-select-option>
+              <ion-select-option value="researchers">researchers</ion-select-option>
+              <ion-select-option value="red">students</ion-select-option>
+              <ion-select-option value="red">support staff</ion-select-option>
+              <ion-select-option value="red">staff Cleaning</ion-select-option>
+              <ion-select-option value="lab technician">lab technician</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+    <!--  -->
+
+
+
+    <div class="ion-text-center">  
+      <button  class="dynamic-button-gree" (click)="createRoom()" *ngIf="!isLoad">Create New Room</button>
+      <button  class="dynamic-button-blue" (click)="dowloadQrCode()" *ngIf="isLoad">
+        <ion-icon name="arrow-down-outline"></ion-icon>
+        Download QR
+      </button>
     </div>
-    <div>
-        <label for="roomaddress">Room Address:</label>
-        <input type="text" id="roomaddress" />
-    </div>
-    <div>
-      <label for="roomfloor">Room Floor:</label>
-      <input type="text" id="roomfloor" />
-    </div>
-    <div>
-      <label for="roomnumber">Room Number:</label>
-      <input type="text" id="roomnumber" />
-    </div>
-    <div>
-      <label for="roomsupervisor">Room Superviser:</label>
-      <input type="text" id="roomsuperviser" />
-    </div>
-    <div>
-      <label for="maximopeople">Maximum Capacity people:</label>
-      <input type="text" id="maximopeople" />
-    </div>
-    <div>
-      <label for="roomtipology">Room Tipology: </label>
-      <select>
-        <option>Laboratorio</option>
-        <option>Aula</option>
-        <option>Biblioteca</option>
-        <option>Museo</option>
-       </select>
-    </div>
-   
-    <div class="button">
-        <button type="submit">Submit</button>
-    </div>
-</form>
-</div>
+
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>

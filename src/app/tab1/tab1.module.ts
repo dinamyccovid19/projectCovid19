@@ -7,6 +7,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 import { QRScanner } from '@ionic-native/qr-scanner/ngx';
+import { DinamycServiceService } from '../dinamyc-service.service';
 
 @NgModule({
   imports: [
@@ -16,7 +17,7 @@ import { QRScanner } from '@ionic-native/qr-scanner/ngx';
     ExploreContainerComponentModule,
     Tab1PageRoutingModule
   ],
-  providers: [QRScanner],
+  providers: [QRScanner, DinamycServiceService],
   declarations: [Tab1Page]
 })
 export class Tab1PageModule {}

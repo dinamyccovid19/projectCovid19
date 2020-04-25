@@ -8,6 +8,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DinamycServiceService } from './dinamyc-service.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,8 +17,10 @@ import { AppComponent } from './app.component';
   providers: [
     StatusBar,
     SplashScreen,
+    DinamycServiceService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
-  bootstrap: [AppComponent]
+  
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

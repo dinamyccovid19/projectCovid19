@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DinamycServiceService } from '../dinamyc-service.service';
 
 @Component({
   selector: 'app-tab6',
@@ -7,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class Tab6Page {
 
-  constructor() {}
+  constructor(private service:DinamycServiceService) {}
+
+  ionViewDidEnter(){
+    this.service.presentLoading();
+  }
 
 }
