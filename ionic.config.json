@@ -1,0 +1,7 @@
+{
+  "name": "dinamycApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
