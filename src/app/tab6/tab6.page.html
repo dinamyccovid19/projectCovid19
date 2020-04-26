@@ -7,79 +7,64 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-    <ion-card>
-      <ion-card-content>
-        <ion-grid>
-          <ion-row>
-            <ion-col>
-              <ion-item > 
-                <ion-label>Create User</ion-label>
-                <ion-toggle color="success"></ion-toggle>
-              </ion-item>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-  
-            <!--  -->
-            <ion-grid>
-              <ion-row>
-                <ion-col>
-                  <ion-item > 
-                    <ion-label position="floating">User Name:</ion-label>
-                    <ion-input></ion-input>
-                  </ion-item>
-                </ion-col>
-                <ion-col>
-                  <ion-item>
-                    <ion-label position="floating">Mail:</ion-label>
-                    <ion-input></ion-input>
-                  </ion-item>
-                </ion-col>
-              </ion-row>
-            </ion-grid>
-          <!--  -->
-  
-  
-        <ion-grid>
-          <ion-row>
-            <ion-col>
-              <ion-item>
-                <ion-label position="floating">ID Number:</ion-label>
-                <ion-input></ion-input>
-              </ion-item>
-            </ion-col>
-  
-            <ion-col>
-              <ion-item > 
-                <ion-label position="floating">Telephone:</ion-label>
-                <ion-input></ion-input>
-              </ion-item>
-            </ion-col>
-  
-          </ion-row>
-        </ion-grid>
-  
-  
-      <!--  -->
-        <ion-grid>
-          <ion-row>
-             <ion-col>
-              <ion-item>
-                <ion-label position="floating">User Name:</ion-label>
-                <ion-input></ion-input>
-              </ion-item>
-            </ion-col> 
-            <ion-col>
-              <ion-item>
-                <ion-label position="floating">Password:</ion-label>
-                <ion-input></ion-input>
-              </ion-item>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      <!--  -->
-
+  <ion-card>
+    <ion-card-content>
       <ion-grid>
+        <!-- <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label>Create User</ion-label>
+              <ion-toggle color="success"></ion-toggle>
+            </ion-item>
+          </ion-col>
+        </ion-row> -->
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">User Name:</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">Mail:</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">ID Number:</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">Telephone:</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">User Name:</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">Password:</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
         <ion-row>
           <ion-col>
             <ion-item>
@@ -88,18 +73,15 @@
             </ion-item>
           </ion-col>
 
-          <ion-col>
-            <ion-item > 
+          <!-- <ion-col>
+            <ion-item>
               <ion-label position="floating">.........:</ion-label>
               <ion-input></ion-input>
             </ion-item>
-          </ion-col>
+          </ion-col> -->
 
         </ion-row>
-      </ion-grid>
-  
-      <!--  -->
-      <ion-grid>
+
         <ion-row>
           <ion-col>
             <ion-item>
@@ -111,40 +93,32 @@
             </ion-item>
           </ion-col>
         </ion-row>
-      </ion-grid>
-      <!--  -->
-  
-          <!--  -->
-          <ion-grid>
-            <ion-row>
-              <ion-col>
-                <ion-item>
-                  <ion-label>User Tipology:</ion-label>
-                  <ion-select value="brown" okText="Okay" cancelText="Dismiss">
-                    <ion-select-option value="fullprofessor">Full Professor</ion-select-option>
-                    <ion-select-option value="asskstantprofessor">Assistant Professor</ion-select-option>
-                    <ion-select-option value="researchers">Researchers</ion-select-option>
-                    <ion-select-option value="Students">Students</ion-select-option>
-                    <ion-select-option value="labtechnician">Lab Tecninician</ion-select-option>
-                    <ion-select-option value="staffcleaning">Staff Cleaning</ion-select-option>
-                    <ion-select-option value="supportstaff">Support Staff</ion-select-option>
-                  </ion-select>
-                </ion-item>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-          <!--  -->
-  
-      <div class="ion-text-center">  
-        <button  class="dynamic-button-gree" (click)="createRoom()" *ngIf="!isLoad">Create New Room</button>
-          <ion-icon name="arrow-down-outline"></ion-icon>
-        </button>
-      </div>
-  
-      </ion-card-content>
-    </ion-card>
-  
-  </ion-header>
 
-  <app-explore-container name="Tab 6 page"></app-explore-container>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label>User Tipology:</ion-label>
+              <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+                <ion-select-option value="fullprofessor">Full Professor</ion-select-option>
+                <ion-select-option value="asskstantprofessor">Assistant Professor</ion-select-option>
+                <ion-select-option value="researchers">Researchers</ion-select-option>
+                <ion-select-option value="Students">Students</ion-select-option>
+                <ion-select-option value="labtechnician">Lab Tecninician</ion-select-option>
+                <ion-select-option value="staffcleaning">Staff Cleaning</ion-select-option>
+                <ion-select-option value="supportstaff">Support Staff</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+
+      <div class="ion-text-center">
+        <button class="dynamic-button-gree" (click)="createRoom()" *ngIf="!isLoad">Create New User</button>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+
+
 </ion-content>
