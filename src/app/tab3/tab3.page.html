@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      New classroom
+      New Room
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,7 +9,7 @@
 <ion-content [fullscreen]="true">
   <ion-card>
     <ion-card-content>
-      <div class="id-room"><span>Room ID : 0001 </span> </div>
+      <!-- <div class="id-room"><span>Room ID : 0001 </span> </div> -->
       <ion-grid>
         <ion-row>
           <ion-col>
@@ -21,25 +21,26 @@
         </ion-row>
       </ion-grid>
 
-    <!--  -->
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <ion-item > 
-              <ion-label position="floating">Room Name:</ion-label>
-              <ion-input></ion-input>
-            </ion-item>
-          </ion-col>
-          <ion-col>
-            <ion-item>
-              <ion-label position="floating">Room Address:</ion-label>
-              <ion-input></ion-input>
-            </ion-item>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    <!--  -->
-    <!--  -->
+          <!--  -->
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-item > 
+                  <ion-label position="floating">Room Name:</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+              </ion-col>
+              <ion-col>
+                <ion-item>
+                  <ion-label position="floating">Room Address:</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        <!--  -->
+
+
       <ion-grid>
         <ion-row>
           <ion-col>
@@ -48,6 +49,27 @@
               <ion-input></ion-input>
             </ion-item>
           </ion-col>
+
+          <ion-col>
+            <ion-item > 
+              <ion-label position="floating">Room Number:</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+
+
+    <!--  -->
+      <ion-grid>
+        <ion-row>
+          <!-- <ion-col>
+            <ion-item>
+              <ion-label position="floating">Room Floor:</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </ion-col> -->
           <ion-col>
             <ion-item>
               <ion-label position="floating">Capacity people:</ion-label>
@@ -75,9 +97,26 @@
         </ion-col>
       </ion-row>
     </ion-grid>
-
-
     <!--  -->
+
+        <!--  -->
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label>User Tipology:</ion-label>
+                <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option value="laboratory">Laboratory</ion-select-option>
+                  <ion-select-option value="class">Class</ion-select-option>
+                  <ion-select-option value="Library">Library</ion-select-option>
+                  <ion-select-option value="sectorroom">Sector Room</ion-select-option>
+                  <ion-select-option value="museum">Museum</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <!--  -->
 
     <div class="ion-text-center">  
       <button  class="dynamic-button-gree" (click)="createRoom()" *ngIf="!isLoad">Create New Room</button>
