@@ -16,7 +16,7 @@ export class Tab5Page {
       "name":"Laboratorio Microcopica Electronica",
       "description":"  Keep close to Natures heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean.",
       "isPrenotabile":true,
-      "numero_postiDisponibile":5
+      "numero_postiDisponibile":2
     },
     {
       "address":"Vai del Castro Petrorio - Roma",
