@@ -26,3 +26,14 @@ In the first version of the app we have designed a pre-ordered distribution of s
 In order to protect user’s data and privacy, the app automatically will ask for consent of user to collect data, will notify user on data to be used and inform the which data will be hold which are absolutely necessary. The user will be enabled to withdraw consent  and 
 request for his data to be deleted. If data will be used by Third Parties, the user will have the possibility to ask to delete his data from servers. Clear procedures will be established for data breaches, to inform users and national supervisory authorities, to start documenting all the data collected and log data collection activities.
 
+## Accomplishments that we're proud of
+Dynamic offers a simple and very cheap way to create a virtual and dynamic row and will manage the space inside the rooms to better organize profit exams, frequency of traineeships and research laboratories at university locations. 
+A dynamic management of the queue avoids an enormous waste of time for teachers, students and operators and crowd forming outside the Department or the classrooms.
+During emergency, Dynamic can be also optimized to manage spaces inside public offices, congresses, conference sites, cinemas, industries, private laboratories, small enterprises and schools.
+This app will be useful not only during Covid-19 Emergency, but will be very useful to manage the university life also in the future.
+
+## What we learned
+
+Mainly we learned how to be helpful in Coronovirus Emergency and how to join forces to face this world emergency.
+We come from very different experiences. Some of us working in Universities learned how to create an app, how to concretize their management ideas. Others coming from the computer world learned which are the need of the university world and scientists. Other coming from Law how to be helpful in the previous two fields. All together we learned how it is very important for people coming from different experiences to overcome even the most difficult of the health emergencies from the post-war period to today.
+
