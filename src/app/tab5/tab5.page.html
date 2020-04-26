@@ -9,50 +9,19 @@
 <ion-content [fullscreen]="true">
   <!-- Default Searchbar -->
   <ion-searchbar></ion-searchbar>
+  <div *ngFor="let item of roomList;" >
+    <ion-card class="card-custom "  [ngClass]="{'non-disponibile': !item.numero_postiDisponibile, 'disponibile': item.numero_postiDisponibile }" >
+      <ion-card-header >
+        <ion-card-subtitle style="text-transform: uppercase;">{{item.address}}</ion-card-subtitle>
+        <ion-card-title>{{item.name}}</ion-card-title>
+        <div class="number-posti"> <ion-badge color="light" *ngIf="item.numero_postiDisponibile"><span>Places available: {{item.numero_postiDisponibile}}</span></ion-badge></div>
+        <div class="number-posti"> <ion-badge color="light" *ngIf="!item.numero_postiDisponibile"><span>Not available</span></ion-badge></div>
+      </ion-card-header>
+      <ion-card-content > {{item.description}}</ion-card-content>
+      <div class="ion-text-center">  <button  class="dynamic-button-white" (click)="presentModal(item)" *ngIf="item.numero_postiDisponibile" >Reservation</button></div>
+    </ion-card>
+  </div>
 
-
-
-  <ion-card class="card-custom disponibile">
-    <ion-card-header >
-      <ion-card-subtitle style="text-transform: uppercase;">Via del vespro, 129 - Palermo</ion-card-subtitle>
-      <ion-card-title>Laboratorio Microcopica Electronica</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content >
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-    <div class="ion-text-center">  <button  class="dynamic-button-white" (click)="presentModal()" >Reservation</button></div>
-  
-  </ion-card>
-  <!--  -->
-  <ion-card class="card-custom non-disponibile">
-    <ion-card-header>
-      <ion-card-subtitle style="text-transform: uppercase;">Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content >
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-  </ion-card>
-  <!--  -->
-  <ion-card class="card-custom disponibile">
-    <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-  </ion-card>
-
-
-
-  
 </ion-content>
 
 

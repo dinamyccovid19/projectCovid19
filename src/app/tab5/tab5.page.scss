@@ -4,12 +4,29 @@
         color: white!important;
     }
     
-    
     &.disponibile{
         background-image: linear-gradient(to right, #00975c, #00bc73);
+        .number-posti{
+            text-align: end;
+            padding-right: 10px;
+            font-weight: bold;
+            span{
+                font-size: 16px;
+                color:#00975c
+            }
+        }
     }
     &.non-disponibile{
         background-image: linear-gradient(to right, red, red);
+        .number-posti{
+            text-align: end;
+            padding-right: 10px;
+            font-weight: bold;
+            span{
+                font-size: 16px;
+                color:red
+            }
+        }
     }
 
 }
