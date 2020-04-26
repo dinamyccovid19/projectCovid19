@@ -10,19 +10,11 @@
   <ion-card>
     <ion-card-content>
       <ion-grid>
-        <!-- <ion-row>
-          <ion-col>
-            <ion-item>
-              <ion-label>Create User</ion-label>
-              <ion-toggle color="success"></ion-toggle>
-            </ion-item>
-          </ion-col>
-        </ion-row> -->
         
         <ion-row>
           <ion-col>
             <ion-item>
-              <ion-label position="floating">User Name:</ion-label>
+              <ion-label position="floating">Complete Name User:</ion-label>
               <ion-input></ion-input>
             </ion-item>
           </ion-col>
@@ -73,20 +65,24 @@
               <ion-input></ion-input>
             </ion-item>
           </ion-col>
-
-          <!-- <ion-col>
-            <ion-item>
-              <ion-label position="floating">.........:</ion-label>
-              <ion-input></ion-input>
-            </ion-item>
-          </ion-col> -->
-
         </ion-row>
 
         <ion-row>
           <ion-col>
             <ion-item>
               <ion-label>Allowed on Working Days:</ion-label>
+              <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+                <ion-select-option value="yes">Yes</ion-select-option>
+                <ion-select-option value="no">No</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label>Allowed on Unworking Days:</ion-label>
               <ion-select value="brown" okText="Okay" cancelText="Dismiss">
                 <ion-select-option value="yes">Yes</ion-select-option>
                 <ion-select-option value="no">No</ion-select-option>
@@ -112,14 +108,29 @@
           </ion-col>
         </ion-row>
 
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label>Access Allowed Since</ion-label>
+              <ion-datetime displayFormat="DD MMM YYYY" placeholder="Select Date"></ion-datetime>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label>Access Allowed Until</ion-label>
+              <ion-datetime displayFormat="DD MMM YYYY" placeholder="Select Date"></ion-datetime>
+            </ion-item>
+          </ion-col>
+        </ion-row>
       </ion-grid>
 
       <div class="ion-text-center">
-        <button class="dynamic-button-gree" (click)="createRoom()" *ngIf="!isLoad">Create New User</button>
+        <button class="dynamic-button-gree" (click)="createUser()" *ngIf="!isLoad">Create New User</button>
       </div>
 
     </ion-card-content>
   </ion-card>
-
 
 </ion-content>

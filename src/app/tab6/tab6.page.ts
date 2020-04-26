@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { LoadingController } from '@ionic/angular';
 import { DinamycServiceService } from '../dinamyc-service.service';
+import { ReturnStatement } from '@angular/compiler';
 
 @Component({
   selector: 'app-tab6',
@@ -19,7 +20,7 @@ export class Tab6Page {
     this.isLoad= false;
   }
 
-  createRoom(){
+  createUser(){
     this.isLoad= true;
     this.servive.presentLoadingToCreate();
   }
