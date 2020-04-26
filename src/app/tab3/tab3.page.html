@@ -7,100 +7,78 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-card>
-    <ion-card-content>
-      <!-- <div class="id-room"><span>Room ID : 0001 </span> </div> -->
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <ion-item > 
-              <ion-label>Active Reservation</ion-label>
-              <ion-toggle color="success"></ion-toggle>
-            </ion-item>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-
-          <!--  -->
-          <ion-grid>
-            <ion-row>
-              <ion-col>
-                <ion-item > 
-                  <ion-label position="floating">Room Name:</ion-label>
-                  <ion-input></ion-input>
-                </ion-item>
-              </ion-col>
-              <ion-col>
-                <ion-item>
-                  <ion-label position="floating">Room Address:</ion-label>
-                  <ion-input></ion-input>
-                </ion-item>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        <!--  -->
-
-
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <ion-item>
-              <ion-label position="floating">Room Floor:</ion-label>
-              <ion-input></ion-input>
-            </ion-item>
-          </ion-col>
-
-          <ion-col>
-            <ion-item > 
-              <ion-label position="floating">Room Number:</ion-label>
-              <ion-input></ion-input>
-            </ion-item>
-          </ion-col>
-
-        </ion-row>
-      </ion-grid>
-
-
-    <!--  -->
-      <ion-grid>
-        <ion-row>
-          <!-- <ion-col>
-            <ion-item>
-              <ion-label position="floating">Room Floor:</ion-label>
-              <ion-input></ion-input>
-            </ion-item>
-          </ion-col> -->
-          <ion-col>
-            <ion-item>
-              <ion-label position="floating">Capacity people:</ion-label>
-              <ion-input></ion-input>
-            </ion-item>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    <!--  -->
-
-    <!--  -->
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <ion-item>
-            <ion-label>Room Tipology:</ion-label>
-            <ion-select value="brown" okText="Okay" cancelText="Dismiss">
-              <ion-select-option value="laboratory">Laboratory</ion-select-option>
-              <ion-select-option value="class">Class</ion-select-option>
-              <ion-select-option value="Library">Library</ion-select-option>
-              <ion-select-option value="sectorroom">Sector Room</ion-select-option>
-              <ion-select-option value="museum">Museum</ion-select-option>
-            </ion-select>
-          </ion-item>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-    <!--  -->
-
-        <!--  -->
+  <!-- Info Room -->
+    <ion-card>
+      <ion-card-content>
+        <!-- <div class="id-room"><span>Room ID : 0001 </span> </div> -->
         <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-item > 
+                <ion-label>Active Reservation</ion-label>
+                <ion-toggle color="success"></ion-toggle>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-item > 
+                <ion-label position="floating">Room Name:</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col>
+              <ion-item>
+                <ion-label position="floating">Room Address:</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label position="floating">Room Floor:</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col>
+
+            <ion-col>
+              <ion-item > 
+                <ion-label position="floating">Room Number:</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col>
+
+          </ion-row>
+          <ion-row>
+            <!-- <ion-col>
+              <ion-item>
+                <ion-label position="floating">Room Floor:</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col> -->
+            <ion-col>
+              <ion-item>
+                <ion-label position="floating">Capacity people:</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label>Room Tipology:</ion-label>
+                <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option value="laboratory">Laboratory</ion-select-option>
+                  <ion-select-option value="class">Class</ion-select-option>
+                  <ion-select-option value="Library">Library</ion-select-option>
+                  <ion-select-option value="sectorroom">Sector Room</ion-select-option>
+                  <ion-select-option value="museum">Museum</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-col>
+          </ion-row>
           <ion-row>
             <ion-col>
               <ion-item>
@@ -116,8 +94,104 @@
             </ion-col>
           </ion-row>
         </ion-grid>
-        <!--  -->
 
+      </ion-card-content>
+    </ion-card>
+  <!-- Info Room -->
+
+  <!-- Info Calendar  -->
+
+    <ion-card>
+      <ion-card-content>
+    
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label>Start Date</ion-label>
+                <ion-datetime displayFormat="DD MMM YYYY" placeholder="Select Date"></ion-datetime>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label>End Date</ion-label>
+                <ion-datetime displayFormat="DD MMM YYYY" placeholder="Select Date"></ion-datetime>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label>Start Ore</ion-label>
+                <ion-datetime displayFormat="h:mm A" minuteValues="0,15,30,45"></ion-datetime>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label>End Ore</ion-label>
+                <ion-datetime displayFormat="h:mm A" minuteValues="0,15,30,45"></ion-datetime>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label>time spot (minuts):</ion-label>
+                <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option *ngFor="let item of listNumber;" value="item" > {{item}}</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label>Check-in timeout (minuts)</ion-label>
+                <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option *ngFor="let item of listNumber;" value="item" > {{item}}</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </ion-card-content>
+    </ion-card>
+
+  <!-- Info Calendar -->
+
+  <!-- Info Utente -->
+    <ion-card>
+      <ion-card-content>
+    
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label>Reservation users number</ion-label>
+                <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option *ngFor="let item of listNumber;" value="item" > {{item}}</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+        </ion-grid>
+
+      </ion-card-content>
+    </ion-card>
+  <!-- Info Utente -->
+
+
+  <!-- conferma Creazione Room -->
     <div class="ion-text-center">  
       <button  class="dynamic-button-gree" (click)="createRoom()" *ngIf="!isLoad">Create New Room</button>
       <button  class="dynamic-button-blue" (click)="dowloadQrCode()" *ngIf="isLoad">
@@ -125,8 +199,8 @@
         Download QR
       </button>
     </div>
-
-    </ion-card-content>
-  </ion-card>
+  <!-- Conferma Creazione Room -->
 
 </ion-content>
+
+

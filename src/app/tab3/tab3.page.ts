@@ -9,9 +9,11 @@ import { DinamycServiceService } from '../dinamyc-service.service';
 })
 export class Tab3Page {
   isLoad = false;
+  listNumber = [...Array(100).keys()];
+  room= {}
 
   constructor(private servive:DinamycServiceService) {
-   
+    console.log(this.listNumber);
   }
 
   ionViewDidEnter(){
