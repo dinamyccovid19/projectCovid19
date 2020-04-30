@@ -1,6 +1,6 @@
 ## Dynamic Row 
 
-represents the solution to maintain social distances between students, 
+Represents the solution to maintain social distances between students, 
 teachers and staff within universities, during the Coronavirus Emergency 
 
 ## Inspiration
