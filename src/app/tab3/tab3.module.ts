@@ -9,7 +9,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 import { Tab3PageRoutingModule } from './tab3-routing.module'
 import { QRScanner } from '@ionic-native/qr-scanner/ngx';
 import { DinamycServiceService } from '../dinamyc-service.service';
-
+import { MaterialModule } from '../material.module';
 @NgModule({
   imports: [
     IonicModule,
@@ -19,6 +19,8 @@ import { DinamycServiceService } from '../dinamyc-service.service';
     ExploreContainerComponentModule,
     RouterModule.forChild([{ path: '', component: Tab3Page }]),
     Tab3PageRoutingModule,
+    MaterialModule,
+    ReactiveFormsModule
   ],
   declarations: [Tab3Page],
   providers: [QRScanner, DinamycServiceService],

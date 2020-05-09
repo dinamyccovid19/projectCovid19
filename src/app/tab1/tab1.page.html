@@ -7,11 +7,40 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-item>
+    <ion-input type="text" placeholder="QR" [(ngModel)]="qrData"></ion-input>
+    <!-- {{qrData }} -->
+  </ion-item>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <button  class="dynamic-button-gree" (click)="createCode()">Create Code</button>
+  <button  class="dynamic-button-gree" (click)="scanCode()"> Scan Code</button>
+
+
+
+  <ion-card *ngIf="createdCode">
+    <ngx-qrcode 
+      [elementType]="elementType" 
+      [value]="createdCode" 
+      cssClass="aclass" 
+      errorCorrectionLevel="L">
+    </ngx-qrcode>
+<!-- 
+    <ion-card-content>
+      <p>Valuen:{{ createdCode }}</p>
+    </ion-card-content> -->
+  </ion-card>
+
+
+  <ion-card *ngIf="scannedCode">
+    <ion-card-content>
+      <p>Valuen:{{ scannedCode }}</p>
+    </ion-card-content>
+  </ion-card>
+
+
+
+
+
+
+  
 </ion-content>
