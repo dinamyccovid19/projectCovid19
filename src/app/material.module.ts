@@ -8,7 +8,9 @@ import {
   MatCardModule,
   MatStepperModule,
   MatFormFieldModule,
-  MatInputModule
+  MatInputModule,
+  MatDatepickerModule,
+  MatNativeDateModule
 } from '@angular/material';
 
 
@@ -22,7 +24,9 @@ import {
     MatCardModule,
     MatStepperModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   exports: [
     MatButtonModule,
@@ -32,7 +36,12 @@ import {
     MatCardModule,
     MatStepperModule,
     MatFormFieldModule,
-    MatInputModule
-  ]
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
+  ],
+  providers: [  
+    MatDatepickerModule,  
+  ],
 })
 export class MaterialModule { }
