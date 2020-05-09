@@ -1,0 +1,22 @@
+
+.landing-page{
+    
+}
+::ng-deep .mat-card {
+    position: absolute !important;
+    top: 50%;
+    background: transparent;
+    margin-top: -50px;
+    text-align: center;
+    box-shadow: none!important;
+  }
+
+  ::ng-deep .mat-form-field-wrapper {
+    padding-bottom: 0;
+}
+
+  
+
+ion-content {
+    --background: white;
+  }
