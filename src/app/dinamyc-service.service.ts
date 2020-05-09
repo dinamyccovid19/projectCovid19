@@ -11,7 +11,7 @@ export class DinamycServiceService {
   async presentLoading() {
     const loading = await this.loadingController.create({
       message: 'Please wait...',
-      duration: 1000
+      duration: 300
     });
     await loading.present();
 
@@ -22,7 +22,7 @@ export class DinamycServiceService {
   async presentLoadingToCreate() {
     const loading = await this.loadingController.create({
       message: 'Please wait...',
-      duration: 2000
+      duration: 300
     });
     await loading.present();
 
@@ -35,7 +35,7 @@ export class DinamycServiceService {
     const toast = await this.toastController.create({
       color:"success",
       message: 'Gentle user operation is confirmed',
-      duration: 2000
+      duration: 1000
     });
     toast.present();
   }

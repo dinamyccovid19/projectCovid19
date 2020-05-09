@@ -14,8 +14,8 @@
       <ion-card-header >
         <ion-card-subtitle style="text-transform: uppercase;">{{item.address}}</ion-card-subtitle>
         <ion-card-title>{{item.name}}</ion-card-title>
-        <div class="number-posti"> <ion-badge color="light" *ngIf="item.numero_postiDisponibile"><span>Places available: {{item.numero_postiDisponibile}}</span></ion-badge></div>
-        <div class="number-posti"> <ion-badge color="light" *ngIf="!item.numero_postiDisponibile"><span>Not available</span></ion-badge></div>
+        <div class="number-posti"> <ion-badge color="dark" *ngIf="item.numero_postiDisponibile"><span>Places available: {{item.numero_postiDisponibile}}</span></ion-badge></div>
+        <div class="number-posti"> <ion-badge color="dark" *ngIf="!item.numero_postiDisponibile"><span>Not available</span></ion-badge></div>
       </ion-card-header>
       <ion-card-content > {{item.description}}</ion-card-content>
       <div class="ion-text-center">  <button  class="dynamic-button-white" (click)="presentModal(item)" *ngIf="item.numero_postiDisponibile" >Reservation</button></div>
