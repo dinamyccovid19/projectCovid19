@@ -24,10 +24,12 @@
     }
     .radio-container{
         margin:10px;
+        color: black !important;
     }
 }
 
 ion-content {
+    
     --background: white;
     --text-align: center;
   }
@@ -39,6 +41,7 @@ ion-content {
 
 ::ng-deep .mat-radio-button {
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 
