@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { DinamycServiceService } from '../dinamyc-service.service';
 import { ModalController } from '@ionic/angular';
-import { ModaPageComponent } from '../moda-page/moda-page.component';
+
 
 @Component({
   selector: 'app-tab5',

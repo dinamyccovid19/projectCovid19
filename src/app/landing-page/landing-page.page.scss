@@ -1,15 +1,26 @@
 
 .landing-page{
+    text-align: center;
+    .next{
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        font-size: 24px;
+        font-weight: bold;
+        background-image: linear-gradient(to right, #00975c, #00bc73);
+    }
+     .mat-card {
+        position: absolute !important;
+        top: 50%;
+        background: transparent;
+        margin-top: -50px;
+        text-align: center;
+        box-shadow: none!important;
+      }
     
 }
-::ng-deep .mat-card {
-    position: absolute !important;
-    top: 50%;
-    background: transparent;
-    margin-top: -50px;
-    text-align: center;
-    box-shadow: none!important;
-  }
+
+
 
   ::ng-deep .mat-form-field-wrapper {
     padding-bottom: 0;

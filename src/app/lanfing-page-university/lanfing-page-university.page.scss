@@ -1,0 +1,26 @@
+.landing-page-university{
+    text-align: center;
+    .back{
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        font-size: 24px;
+        font-weight: bold;
+        box-shadow: 0 8px 16px 0 rgba(0, 39, 19, 0.24);
+        background-image: linear-gradient(to left, #104d87, #1e77b4);
+    }
+    .next{
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        font-size: 24px;
+        font-weight: bold;
+        background-image: linear-gradient(to right, #00975c, #00bc73);
+    }
+}
+
+ion-content {
+    --background: white;
+    --text-align: center;
+  }
+

@@ -1,0 +1,97 @@
+<ion-content class="register-utente">
+  <div class="utente"><img src="../../assets/utente.gif" alt="HTML5 Icon" width=150></div>
+  <mat-horizontal-stepper labelPosition="bottom" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <ng-template matStepLabel>Info</ng-template>
+      <mat-card>
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Placeholder">
+          <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+          <!-- <mat-hint>Hint</mat-hint> -->
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Surname</mat-label>
+          <input matInput placeholder="Placeholder">
+          <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+          <!-- <mat-hint>Hint</mat-hint> -->
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Age</mat-label>
+          <input matInput placeholder="Placeholder">
+          <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+          <!-- <mat-hint>Hint</mat-hint> -->
+        </mat-form-field>
+
+        <!-- <mat-form-field > -->
+        <!-- <mat-label>Legacy form field</mat-label> -->
+        <div class="radio-container">
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">Man</mat-radio-button>
+            <mat-radio-button value="2">Woman</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <!-- </mat-form-field>  -->
+
+      </mat-card>
+    </mat-step>
+
+
+    <mat-step>
+      <ng-template matStepLabel>Role</ng-template>
+      <mat-card>
+        <mat-form-field appearance="outline">
+          <mat-label>Role</mat-label>
+          <input matInput placeholder="Placeholder">
+          <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+          <!-- <mat-hint>Hint</mat-hint> -->
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Mail </mat-label>
+          <input matInput placeholder="Placeholder">
+          <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+          <!-- <mat-hint>Hint</mat-hint> -->
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Course</mat-label>
+          <input matInput placeholder="Placeholder">
+          <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+          <!-- <mat-hint>Hint</mat-hint> -->
+        </mat-form-field>
+
+        <!-- <mat-form-field > -->
+        <!-- <mat-label>Legacy form field</mat-label> -->
+        <mat-form-field appearance="outline">
+          <mat-label>Department of afference</mat-label>
+          <input matInput placeholder="Placeholder">
+          <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+          <!-- <mat-hint>Hint</mat-hint> -->
+        </mat-form-field>
+        <!-- </mat-form-field>  -->
+
+      </mat-card>
+
+
+    </mat-step>
+
+  </mat-horizontal-stepper>
+
+
+
+
+
+  <button class="next" mat-fab color="primary" aria-label="Example icon button with a delete icon" expand="block"
+    routerLink="/view-room" routerDirection="root">
+    <mat-icon>arrow_forward</mat-icon>
+  </button>
+
+  <button class="back" mat-fab color="primary" aria-label="Example icon button with a delete icon" expand="block"
+    routerLink="/lanfing-page-university" routerDirection="root">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+
+</ion-content>
