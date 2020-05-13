@@ -8,6 +8,7 @@ import { LanfingPageUniversityPageRoutingModule } from './lanfing-page-universit
 
 import { LanfingPageUniversityPage } from './lanfing-page-university.page';
 import { MaterialModule } from '../material.module';
+import { DinamycServiceService } from '../dinamyc-service.service';
 
 @NgModule({
   imports: [

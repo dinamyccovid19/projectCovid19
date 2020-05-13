@@ -8,6 +8,7 @@ import { LandingPagePageRoutingModule } from './landing-page-routing.module';
 
 import { LandingPagePage } from './landing-page.page';
 import { MaterialModule } from '../material.module';
+import { DinamycServiceService } from '../dinamyc-service.service';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { MaterialModule } from '../material.module';
     MaterialModule,
     ReactiveFormsModule
   ],
-  declarations: [LandingPagePage]
+  declarations: [LandingPagePage],
+  providers: [, DinamycServiceService],
 })
 export class LandingPagePageModule {}

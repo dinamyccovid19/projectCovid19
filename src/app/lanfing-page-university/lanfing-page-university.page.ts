@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { DinamycServiceService } from '../dinamyc-service.service';
 
 @Component({
   selector: 'app-lanfing-page-university',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LanfingPageUniversityPage implements OnInit {
 
-  constructor() { }
+  constructor(private _formBuilder: FormBuilder, private service : DinamycServiceService) { }
+  formLocation: FormGroup;
 
   ngOnInit() {
+    
+
   }
 
 }

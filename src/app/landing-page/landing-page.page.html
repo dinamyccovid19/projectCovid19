@@ -4,38 +4,40 @@
   <img src="../../assets/mondo.gif" alt="HTML5 Icon" >
 
     <mat-card>
-      <mat-form-field appearance="outline">
-        <mat-label>Region</mat-label>
-        <mat-select>
-          <mat-option *ngFor="let food of foods" [value]="food.value">
-            {{food.viewValue}}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-      <mat-form-field appearance="outline">
-        <mat-label>Country</mat-label>
-        <mat-select>
-          <mat-option *ngFor="let food of foods" [value]="food.value">
-            {{food.viewValue}}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-      <mat-form-field appearance="outline">
-        <mat-label>State - Province</mat-label>
-        <mat-select>
-          <mat-option *ngFor="let food of foods" [value]="food.value">
-            {{food.viewValue}}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-  
+      <form [formGroup]="formLocation">
+        <mat-form-field appearance="outline">
+          <mat-label>Region</mat-label>
+          <mat-select  formControlName="region" >
+            <mat-option *ngFor="let reg of region" [value]="reg" >
+              {{reg.label}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" >
+          <mat-label>Country</mat-label>
+          <mat-select  formControlName="country" [disabled]="formLocation.controls.region.invalid"  >
+            <mat-option *ngFor="let count of country" [value]="count">
+              {{count.label}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" >
+          <mat-label>State - Province</mat-label>
+          <mat-select  formControlName="province" [disabled]="formLocation.controls.country.invalid">
+            <mat-option *ngFor="let prov of province" [value]="prov">
+              {{prov.label}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
     </mat-card>
 
+  <!-- confirmLocation -->
+    <div class="ion-text-center">
+      <button class="dynamic-button-green" [disabled]="formLocation.invalid"  routerLink="/lanfing-page-university" routerDirection="root" >Confirm Location</button>
+    </div>
+  <!-- confirm Location -->
 
-
-  <button class="next" mat-fab color="primary" aria-label="Example icon button with a delete icon" expand="block" routerLink="/lanfing-page-university" routerDirection="root">
-    <mat-icon>arrow_forward</mat-icon>
-  </button>
 
 
 
