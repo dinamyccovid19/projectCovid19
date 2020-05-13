@@ -15,8 +15,6 @@
   <button  class="dynamic-button-gree" (click)="createCode()">Create Code</button>
   <button  class="dynamic-button-gree" (click)="scanCode()"> Scan Code</button>
 
-
-
   <ion-card *ngIf="createdCode">
     <ngx-qrcode 
       [elementType]="elementType" 
