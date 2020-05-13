@@ -42,11 +42,4 @@ export class Tab1Page {
     this.service.presentLoading();
    
   }
-
- 
-
-
-
-
-
 }
