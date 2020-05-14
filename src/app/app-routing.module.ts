@@ -8,7 +8,7 @@ const routes: Routes = [
   },
 
   {
-    path: '',
+    path: 'landing-page',
     loadChildren: () => import('./landing-page/landing-page.module').then( m => m.LandingPagePageModule)
   },
   {
@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'view-room',
     loadChildren: () => import('./view-room/view-room.module').then( m => m.ViewRoomPageModule)
+  },
+  {
+    path: '',
+    loadChildren: () => import('./onboarding/onboarding.module').then( m => m.OnboardingPageModule)
   }
 ];
 @NgModule({
