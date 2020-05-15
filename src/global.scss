@@ -32,9 +32,24 @@ ion-content {
   }
 
 
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+    border-color:  #104d87;
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+    background-color: #104d87;
+}
+
   
 a[disabled], button[disabled], html input[disabled] {
     opacity: 0.7;
+}
+
+a{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: transparent;
+    color: #104d87;
 }
 
 

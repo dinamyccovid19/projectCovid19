@@ -26,6 +26,22 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./onboarding/onboarding.module').then( m => m.OnboardingPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
+  },
+  {
+    path: 'signup2',
+    loadChildren: () => import('./signup2/signup2.module').then( m => m.Signup2PageModule)
+  },
+  {
+    path: 'signup3',
+    loadChildren: () => import('./signup3/signup3.module').then( m => m.Signup3PageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   }
 ];
 @NgModule({
