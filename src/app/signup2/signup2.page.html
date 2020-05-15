@@ -1,5 +1,5 @@
 <ion-content class="signup2">
-  <div class="utente"><img src="../../assets/utente.gif" alt="HTML5 Icon" width=200></div>
+  <div class="utente"><img src="../../assets/utente.gif" alt="HTML5 Icon" width=150></div>
   <mat-card>
     <form [formGroup]="formSignup2">
       <h1>Basic Info</h1>
@@ -22,6 +22,15 @@
       </div>
       <div>
         <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Placeholder"  formControlName="email">
+          <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+          <!-- <mat-hint>Hint</mat-hint> -->
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field appearance="outline">
           <mat-label>Age</mat-label>
           <input matInput placeholder="Placeholder" type="number"  formControlName="age">
           <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
@@ -33,7 +42,7 @@
         <!-- <mat-form-field > -->
         <!-- <mat-label>Legacy form field</mat-label> -->
         <div class="radio-container"  >
-          <mat-radio-group aria-label="Select an option"  >
+          <mat-radio-group aria-label="Select an option"  formControlName="gender">
             <mat-radio-button value="M" >Man</mat-radio-button>
             <mat-radio-button value="W">Woman</mat-radio-button>
           </mat-radio-group>
@@ -46,7 +55,7 @@
 
   <!-- confirmLocation -->
   <div class="ion-text-center">
-    <button class="dynamic-button-green" [disabled]="formSignup2.invalid" routerLink="/lanfing-page-university"
+    <button class="dynamic-button-green" [disabled]="formSignup2.invalid" routerLink="/signup3"
       routerDirection="root">Continua</button>
   </div>
   <!-- confirm Location -->

@@ -17,7 +17,7 @@ export class Signup2Page implements OnInit {
       name: ['', Validators.required],
       surname: ['', Validators.required],
       age: ['', Validators.required],
-      // gender: ['', Validators.required],
+      gender: ['', Validators.required],
       email: ['', Validators.required],
     });
 

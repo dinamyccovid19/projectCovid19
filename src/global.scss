@@ -46,10 +46,12 @@ a[disabled], button[disabled], html input[disabled] {
 }
 
 a{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     background-color: transparent;
     color: #104d87;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 

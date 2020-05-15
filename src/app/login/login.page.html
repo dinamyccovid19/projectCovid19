@@ -1,44 +1,36 @@
-
-
-<ion-content class="landing-page">
-  <img src="../../assets/mondo.gif" alt="HTML5 Icon" >
-
-    <mat-card>
-      <form [formGroup]="formLocation">
+<ion-content class="login">
+  <img src="../../assets/login_.png" alt="HTML5 Icon" >
+  <mat-card>
+    <form [formGroup]="formLogin">
+      <h1>Login</h1>
+      <div>
         <mat-form-field appearance="outline">
-          <mat-label>Region</mat-label>
-          <mat-select  formControlName="region" >
-            <mat-option *ngFor="let reg of region" [value]="reg" >
-              {{reg.label}}
-            </mat-option>
-          </mat-select>
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Email" formControlName="email">
+          <mat-icon matSuffix class="person">person</mat-icon>
+          <!-- <mat-hint>Hint</mat-hint> -->
         </mat-form-field>
-        <mat-form-field appearance="outline" >
-          <mat-label>Country</mat-label>
-          <mat-select  formControlName="country" [disabled]="formLocation.controls.region.invalid"  >
-            <mat-option *ngFor="let count of country" [value]="count">
-              {{count.label}}
-            </mat-option>
-          </mat-select>
+      </div>
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
         </mat-form-field>
-        <mat-form-field appearance="outline" >
-          <mat-label>State - Province</mat-label>
-          <mat-select  formControlName="province" [disabled]="formLocation.controls.country.invalid">
-            <mat-option *ngFor="let prov of province" [value]="prov">
-              {{prov.label}}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-      </form>
-    </mat-card>
+      </div>
+    </form>
+  </mat-card>
 
   <!-- confirmLocation -->
-    <div class="ion-text-center">
-      <button class="dynamic-button-green" [disabled]="formLocation.invalid"  routerLink="/lanfing-page-university" routerDirection="root" >Confirm Location</button>
-    </div>
+  <div class="ion-text-center">
+    <button class="dynamic-button-green" [disabled]="formLogin.invalid" routerLink="/signup2"
+      routerDirection="root">Login</button>
+    <p> don't have account ?</p>
+    <a routerLink="/signup">Sign up</a>
+  </div>
   <!-- confirm Location -->
-
-
-
 
 </ion-content>
